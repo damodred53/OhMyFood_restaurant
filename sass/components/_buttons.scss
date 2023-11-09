@@ -1,0 +1,17 @@
+button {
+    background: linear-gradient(#FF79DA,#9356DC,);
+    color: white;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    width: 70%;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 35px;
+    cursor: pointer;
+    transition: filter 400ms ease-in-out;
+}
+
+button:hover {
+    filter: brightness(1.2)
+}

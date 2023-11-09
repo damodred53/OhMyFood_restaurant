@@ -1,0 +1,25 @@
+.etape {
+    @include flex_row_center;
+    gap: 10%;
+    width: 90%;
+    height: 100px;
+    background-color: $grey_background;
+    border-radius: 20px;
+    margin-bottom: 3%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /*padding-right: 20%;*/
+
+    &.etape img {
+        height: 30px;
+    }
+
+    &.etape > p {
+        background-color: $purple_fonctionnement;
+        position: absolute;
+        left: 3%;
+        color: white;
+        border-radius: 25px;
+        font-size: 22px;
+        padding: 1% 2%;
+    }
+}

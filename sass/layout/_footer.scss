@@ -1,0 +1,29 @@
+.footer {
+    background-color: $grey_footer;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0% 0% 5% 5%;
+
+    &.footer p {
+        font-weight: 500;
+        line-height: 79px;
+    }
+
+   &_title_logo {
+    font-family: 'Shrikhand';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 26px;
+   }
+
+   &_under_div {
+    display: flex;
+    gap: 5%;
+   }
+   
+   &_under_div > img {
+    width: 4%;
+    }
+}

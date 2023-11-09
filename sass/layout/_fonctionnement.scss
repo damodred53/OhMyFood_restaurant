@@ -1,0 +1,18 @@
+
+.fonctionnement {
+    
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+.fonctionnement_menu{
+    @include flex_column_all_center; 
+    
+}
+
+
+
+/*.fonctionnement_menu > div {
+    @include flex_row_center;
+}*/

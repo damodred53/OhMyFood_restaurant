@@ -1,0 +1,21 @@
+.discover {
+    @include flex_column_all_center;
+    padding-top: 5%;
+   
+    background-color: $grey_background;
+    
+    &_under_title {
+        width: 60%;
+        text-align: center;
+    }
+    &_advertising_paragraph {
+        text-align: center;
+    }
+
+    &_button {
+        width: 50%;
+        margin-top: 7%;
+        margin-bottom: 12%;
+    }
+    
+}

@@ -1,0 +1,13 @@
+.restaurants {
+    width: 90%;
+    margin-top: 120px;
+    padding-bottom: 60px;
+    padding-top: 100px;
+    background-color: $grey_background;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    &.restaurants > h3 {
+        font-weight: bold;
+    }
+}

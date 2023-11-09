@@ -1,0 +1,28 @@
+@import './sass/abstracts/animations';
+@import './sass/abstracts/functions';
+@import './sass/abstracts/mixins';
+@import './sass/abstracts/placeholders';
+@import './sass/abstracts/variables';
+
+@import './sass/base/reset';
+@import './sass/base/typography';
+/*@import './sass/base/normalize';*/
+
+@import './sass/components/buttons';
+@import './sass/components/etape';
+@import './sass/components/card';
+@import './sass/components/check-box-heart.scss';
+
+@import './sass/layout/header';
+@import './sass/layout/footer';
+@import './sass/layout/advertising';
+@import './sass/layout/fonctionnement';
+@import './sass/layout/restaurants';
+
+
+@import './sass/pages/home.scss';
+
+@import './sass/themes/general';
+
+
+
