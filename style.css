@@ -102,7 +102,12 @@ button:hover {
   border-radius: 20px;
   margin-bottom: 6%;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  /*padding-right: 20%;*/
+}
+@media (min-width: 768px) {
+  .etape {
+    height: 75px;
+    white-space: nowrap;
+  }
 }
 .etape.etape img {
   height: 30px;
@@ -125,6 +130,11 @@ button:hover {
   position: relative;
   cursor: pointer;
 }
+@media (min-width: 1024px) {
+  .cards {
+    /*width: 100%;*/
+  }
+}
 .cards.cards > img {
   width: 100%;
   height: 65%;
@@ -133,15 +143,15 @@ button:hover {
   border-top-left-radius: 15px;
   z-index: 1;
 }
-.cards.cards > h3 {
-  margin-bottom: 0%;
+.cards_h3_title {
+  margin-bottom: 2%;
 }
 .cards_description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2% 5% 2% 5%;
+  padding-left: 2%;
 }
 .cards_nouveau {
   background-color: #99E2D0;
@@ -274,11 +284,30 @@ button:hover {
 @media (min-width: 768px) {
   .footer {
     margin-bottom: 5%;
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin: 0% 6% 3% 0%;
+    height: 115px;
   }
 }
 .footer.footer p {
   font-weight: 500;
   line-height: 19px;
+}
+@media (min-width: 1024px) {
+  .footer_links {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 .footer_title_logo {
   font-family: "Shrikhand";
@@ -286,6 +315,11 @@ button:hover {
   font-weight: 400;
   line-height: 26px;
   margin-bottom: 5%;
+}
+@media (min-width: 1024px) {
+  .footer_title_logo {
+    margin: 1%;
+  }
 }
 .footer_link_to_mail {
   color: white;
@@ -299,6 +333,13 @@ button:hover {
 @media (min-width: 768px) {
   .footer_under_div {
     margin-bottom: 2%;
+  }
+}
+@media (min-width: 1024px) {
+  .footer_under_div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0%;
   }
 }
 .footer_paragraph {
@@ -337,12 +378,14 @@ button:hover {
   margin-top: 7%;
   margin-bottom: 12%;
   font-size: 16px;
-  /*@media (min-width: 768px) {
-      width: 25%;
-      font-size: 25px;
-      margin-top: 3%;
-      margin-bottom: 3%;
-  }*/
+}
+@media (min-width: 768px) {
+  .discover_button {
+    width: 25%;
+    font-size: 15px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
 }
 
 .fonctionnement {
@@ -351,6 +394,11 @@ button:hover {
   padding-left: 5%;
   padding-bottom: 15%;
 }
+@media (min-width: 768px) {
+  .fonctionnement.fonctionnement > h2 {
+    margin-top: 40px;
+  }
+}
 
 .fonctionnement_menu {
   display: flex;
@@ -358,7 +406,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   /*@media (min-width: 768px) {
-      @include flex_row_center;
+      @include flex_row_space_between;
 
       padding-right: 5%;
   }*/
@@ -372,6 +420,14 @@ button:hover {
   background-color: #F6F6F6;
   padding-left: 5%;
   padding-right: 5%;
+}
+.restaurants_multi_cards {
+  /* display : flex;
+   flex-direction : row;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5%;
+  column-gap: 50px;
 }
 .restaurants.restaurants > h3 {
   font-weight: bold;

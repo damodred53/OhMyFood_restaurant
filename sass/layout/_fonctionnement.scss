@@ -6,13 +6,19 @@
     padding-left: 5%;
     padding-bottom: 15%;
     
+    &.fonctionnement > h2 {
+        @media (min-width: 768px) {
+            margin-top: 40px;
+        }
+    }
+    
 }
 
 .fonctionnement_menu {
     @include flex_column_all_center; 
     
     /*@media (min-width: 768px) {
-        @include flex_row_center;
+        @include flex_row_space_between;
         
         padding-right: 5%;
     }*/
