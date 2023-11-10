@@ -5,11 +5,17 @@
     flex-direction: column;
     padding-left: 5%;
     padding-bottom: 15%;
+
+    @media (min-width: 1024px) {
+        padding-bottom : 5%;
+    }
     
     &.fonctionnement > h2 {
         @media (min-width: 768px) {
             margin-top: 40px;
         }
+
+       
     }
     
 }
@@ -17,11 +23,13 @@
 .fonctionnement_menu {
     @include flex_column_all_center; 
     
-    /*@media (min-width: 768px) {
+    @media (min-width: 1024px) {
         @include flex_row_space_between;
-        
+        margin: 0%;
         padding-right: 5%;
-    }*/
+        gap: 5%;
+        
+    }
 }
 
 

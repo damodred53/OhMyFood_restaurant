@@ -7,6 +7,10 @@
     &_under_title {
         width: 70%;
         text-align: center;
+
+        @media (min-width: 1024px) {
+            font-size : 40px;
+        }
     }
     &_advertising_paragraph {
         text-align: center;
@@ -16,6 +20,9 @@
         @media (min-width:768px) {
             font-size: 20px
         }
+
+       
+       
     }
 
     &_button {

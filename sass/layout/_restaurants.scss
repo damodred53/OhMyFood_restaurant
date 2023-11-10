@@ -8,13 +8,14 @@
     padding-right: 5%;
 
     &_multi_cards {
-       /* display : flex;
-        flex-direction : row;*/
 
+
+      @media (min-width: 1024px) {
         display : grid;
         grid-template-columns : 1fr 1fr;
         row-gap : 5%;
         column-gap : 50px;
+      }
     }
     
 
