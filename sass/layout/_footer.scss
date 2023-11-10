@@ -6,23 +6,43 @@
     justify-content: space-around;
     padding: 0% 0% 5% 5%;
 
+    @media (min-width:768px) {
+        margin-bottom: 5%;
+    }
+
     &.footer p {
         font-weight: 500;
-        line-height: 79px;
+        line-height: 19px;
+        
     }
 
    &_title_logo {
     font-family: 'Shrikhand';
-    font-size: 50px;
+    font-size: 25px;
     font-weight: 400;
     line-height: 26px;
+    margin-bottom:5%;
+   }
+
+
+   &_link_to_mail {
+    color: white;
+    text-decoration: none;
    }
 
    &_under_div {
     display: flex;
     gap: 5%;
+    margin-bottom: 5%;
+    @media (min-width: 768px) {
+        margin-bottom: 2%
+    }
    }
-   
+
+   &_paragraph {
+    margin-bottom : 5%;
+   }
+
    &_under_div > img {
     width: 4%;
     }

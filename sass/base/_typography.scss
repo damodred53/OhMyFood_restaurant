@@ -5,19 +5,23 @@
 h2 {
     font-family: 'Roboto';
     font-weight: 700;
-    font-size: 54px;
+    font-size: 25px;
 }
 
 h3 {
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 40px;
+    font-size: 16px;
     line-height: 18px;
+
+    @media (min-width:768px) {
+        font-size: 18px;
+    }
 }
 
 p {
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: 50px;
+    font-size: 18px;
     margin: 0%;
 }

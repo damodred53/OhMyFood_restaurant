@@ -1,0 +1,24 @@
+.loader {
+    position: absolute;
+    top:25%;
+    left : 0%;
+    width: 100%;
+    margin-top: 500px;
+    margin-bottom: 500px;
+    animation : disparition 0ms 1000ms both;
+
+
+    
+    &_bar {
+        height: 50px;
+        border: 2px black solid;
+
+        &_progressing {
+            transform-origin: left;
+            height: 100%;
+            background-color: #9356DC;
+            animation : progress_bar_loader 1000ms 250ms both;
+            
+        }
+    }
+}   

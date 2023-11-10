@@ -1,19 +1,28 @@
-@keyframes opacity{
+@keyframes progress_bar_loader {
     0% {
-        
-        opacity: 0;
-    }
-    17% {
-        
-        opacity: .5;
-    }   
-    
-    46% {
-        
-        opacity: .7;
+        transform: scaleX(0);
     }
     100% {
-        
-        opacity: 1;
+        transform: scaleX(1);
+        display: none;
     }
+}
+
+@keyframes landingpage{
+    0% {
+        transform: translateX(-9999px);
+    }
+    100% {
+        transform: translateX(0px);
+        }
+    }
+
+@keyframes disparition {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-9999px);
+    }
+    
 }

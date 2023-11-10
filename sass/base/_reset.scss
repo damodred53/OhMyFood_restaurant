@@ -1,9 +1,19 @@
 body {
-    margin: 0em !important;
+    margin: 0em !important;  
 }
 
-main {
+
+.restaurants, .fonctionnement, .discover{
     margin: 0em !important;
+    animation: landingpage 0ms  1000ms both;
+}
+
+footer { 
+    animation: landingpage 0ms  1000ms both;
+}
+
+header {
+    animation: landingpage 0ms  1000ms both;
 }
 
 html {

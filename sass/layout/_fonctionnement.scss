@@ -4,15 +4,21 @@
     display: flex;
     flex-direction: column;
     padding-left: 5%;
-}
-
-.fonctionnement_menu{
-    @include flex_column_all_center; 
+    padding-bottom: 15%;
     
 }
 
+.fonctionnement_menu {
+    @include flex_column_all_center; 
+    
+    /*@media (min-width: 768px) {
+        @include flex_row_center;
+        
+        padding-right: 5%;
+    }*/
+}
 
 
-/*.fonctionnement_menu > div {
-    @include flex_row_center;
-}*/
+
+
+

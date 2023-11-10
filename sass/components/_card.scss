@@ -1,7 +1,6 @@
 .cards {
-    /*width: 100%;*/
     background-color: white;
-    height: 650px;
+    height: 250px;
     border-radius: 15px;
     margin-bottom: 35px;
     position: relative;
@@ -15,21 +14,28 @@
         border-top-left-radius: 15px;
         z-index: 1;
     }
+
+    &.cards > h3 {
+        margin-bottom: 0%;
+    }
+
     &_description {
         @include flex_row_space_between;
         padding: 2% 5% 2% 5%;
-
     }
+
+    
     &_nouveau {
         background-color: $green_background;
         color: $green_font;
         position: absolute;
-        top: 55px;
-        right: 55px;
-        border-radius: 15px;
-        height:50px;
+        top: 25px;
+        right: 20px;
+        border-radius: 5px;
+        height:25px;
         font-weight: 500;
         padding: 2% 2% 2% 2%;
         
     }
 }
+
