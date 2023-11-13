@@ -17,6 +17,16 @@
         }
     }
 
+@keyframes after_cards_restaurant{
+    0% {
+        transform: translateX(9999px);
+    }
+    100% {
+        transform: translateX(0px);
+        }
+    }
+
+
 @keyframes disparition {
     0% {
         transform: translateX(0px);

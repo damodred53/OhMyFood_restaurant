@@ -1,0 +1,12 @@
+.picture_restaurant {
+    
+    width: 100%;
+    object-fit: cover;
+    height: 275px;
+
+    &.picture_restaurant > img {
+        width: 100%;
+        object-fit: cover;
+        height: 275px;
+    }
+}

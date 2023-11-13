@@ -2,6 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 
+h1 {
+    font-family: 'Shrikhand';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 28px;
+    line-height: 41px;
+    color: $color_basic_font;
+    margin: 0%;
+}
+
+
 h2 {
     font-family: 'Roboto';
     font-weight: 700;

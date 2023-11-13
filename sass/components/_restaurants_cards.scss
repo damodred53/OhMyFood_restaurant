@@ -1,0 +1,104 @@
+.cards_menu_entree {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: $white;
+    border-radius: 20px;
+    padding: 5%;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: relative;
+    
+    &.cards_menu_entree  h3 {
+        margin: 0% 0% 2% 0%;
+    } 
+    
+    &_validated {
+        @include flex_column_all_center;
+        background-color: $green_background;
+        width: 20%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transition : transform 500ms ease-in-out;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin-left: -10%;
+        transform: translateX(9999px);
+        
+    }
+
+
+    &_menu_animation_1 {
+        animation: landingpage 1000ms  500ms both;
+    }
+
+    &_menu_animation_2 {
+        animation: landingpage 1000ms  700ms both;
+    }
+
+    &_menu_animation_3 {
+        animation: landingpage 1000ms  1000ms both;
+    }
+
+    &_title_input {
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 10;
+        opacity: 0;
+
+        &:checked + .cards_menu_entree_validated + .cards_menu_entree_price {
+
+            transform: translateX(-70%);
+            transition-delay: 300ms;
+        }
+
+        &:checked + .cards_menu_entree_validated {
+            transform: translateX(0px);
+        }
+
+        /*&:not(:checked) + .cards_menu_entree_validated {
+            transform: translateX(9999px);
+        }*/
+    }
+
+    &_title {
+        width: 50%;
+        height: 50px;
+    }
+
+    &_title_link > h3 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    &_paragraph {
+        font-size: 16px;
+        line-height: 17px;
+        font-weight: 300;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    &_price {
+        width: 30%;
+        height: 40px;
+        display: flex;
+       justify-content: flex-end;
+        align-items: flex-end;
+        transition : transform 300ms 0ms;
+    }
+    
+    
+}
+
