@@ -72,11 +72,13 @@
     }
 
     &_title {
-        width: 50%;
+        width: 60%;
         height: 50px;
+        
     }
 
     &_title_link > h3 {
+        width: 60%;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;

@@ -7,6 +7,12 @@
     padding-left: 5%;
     padding-right: 5%;
 
+    @media (min-width:1440px) {
+      @include flex_column_center;
+
+      
+    }
+
     &_multi_cards {
 
 
@@ -15,6 +21,11 @@
         grid-template-columns : 1fr 1fr;
         row-gap : 5%;
         column-gap : 50px;
+      }
+
+      @media (min-width:1440px) {
+        width: 80%;
+        margin-top: 5rem;
       }
     }
     

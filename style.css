@@ -108,10 +108,13 @@ button {
   font-size: 35px;
   cursor: pointer;
   transition: filter 400ms ease-in-out;
+  transition: box-shadow 400ms ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
 button:hover {
   filter: brightness(1.2);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .etape {
@@ -158,9 +161,19 @@ button:hover {
   padding: 1% 3%;
 }
 
-.links_restaurants {
+.cards_links_restaurants {
   text-decoration: none;
   color: #101010;
+  width: auto;
+  height: auto;
+}
+.cards_links_restaurants.cards_links_restaurants > img {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  z-index: 1;
 }
 
 .cards {
@@ -170,14 +183,14 @@ button:hover {
   margin-bottom: 35px;
   position: relative;
   cursor: pointer;
-}
-.cards.cards > img {
-  width: 100%;
-  height: 65%;
-  object-fit: cover;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  z-index: 1;
+  /*&.cards > img {
+      width: 100%;
+      height: 65%;
+      object-fit: cover;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+      z-index: 1;
+  }*/
 }
 .cards_h3_title {
   margin-bottom: 2%;
@@ -237,7 +250,7 @@ button:hover {
 
 .loader {
   position: absolute;
-  top: 25%;
+  top: 5%;
   left: 15%;
   width: 70%;
   margin-top: 500px;
@@ -333,10 +346,11 @@ button:hover {
   transform: translateX(0px);
 }
 .cards_menu_entree_title {
-  width: 50%;
+  width: 60%;
   height: 50px;
 }
 .cards_menu_entree_title_link > h3 {
+  width: 60%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -583,6 +597,12 @@ button:hover {
     margin-top: 40px;
   }
 }
+@media (min-width: 1440px) {
+  .fonctionnement.fonctionnement > h2 {
+    margin-left: 12%;
+    width: 100%;
+  }
+}
 
 .fonctionnement_menu {
   display: flex;
@@ -601,6 +621,13 @@ button:hover {
     gap: 5%;
   }
 }
+@media (min-width: 1440px) {
+  .fonctionnement_menu {
+    width: 70%;
+    /*@include flex_row_center;*/
+    align-self: center;
+  }
+}
 
 .restaurants {
   width: 90%;
@@ -611,12 +638,25 @@ button:hover {
   padding-left: 5%;
   padding-right: 5%;
 }
+@media (min-width: 1440px) {
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media (min-width: 1024px) {
   .restaurants_multi_cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 5%;
     column-gap: 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .restaurants_multi_cards {
+    width: 80%;
+    margin-top: 5rem;
   }
 }
 .restaurants.restaurants > h3 {
