@@ -10,6 +10,10 @@
     margin-bottom: 1rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     position: relative;
+
+    @media (min-width:1440px) {
+        padding: 2%;
+    }
     
     &.cards_menu_entree  h3 {
         margin: 0% 0% 2% 0%;
@@ -27,8 +31,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        margin-left: -10%;
-        transform: translateX(9999px);
+        transform: translateX(2000px);
         
     }
 
@@ -54,20 +57,18 @@
         top: 0;
         z-index: 10;
         opacity: 0;
+        width: 100%;
+        height: 100%;
 
         &:checked + .cards_menu_entree_validated + .cards_menu_entree_price {
 
             transform: translateX(-70%);
-            transition-delay: 300ms;
+            transition-delay: 250ms;
         }
 
         &:checked + .cards_menu_entree_validated {
-            transform: translateX(0px);
+            transform: translateX(0px) ;
         }
-
-        /*&:not(:checked) + .cards_menu_entree_validated {
-            transform: translateX(9999px);
-        }*/
     }
 
     &_title {

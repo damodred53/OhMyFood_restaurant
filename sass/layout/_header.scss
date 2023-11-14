@@ -2,6 +2,7 @@
 
 .header {
     @include flex_column_center;
+    position: relative;
     
     &_logo {
         @include flex_row_center;
@@ -14,14 +15,27 @@
         @media (min-width: 1024px) {
             height: 95px;
         }
-    }
-    &_logo > img {
-        width:60%;
 
-        @media (min-width: 1024px) {
-            width:200px;
+        &_back_arrow {
+            width: 17px;
+            height: 16px;
+            position: absolute;
+            left: 2rem;
+            top: 2rem;
+            
+        }
+
+        &_title {
+            width:60%;
+    
+            @media (min-width: 1024px) {
+                width:200px;
+            }
+            
         }
     }
+    
+    
 
     &_localisation {
         @include flex_row_center;
@@ -47,4 +61,6 @@
         width: 35px;
         height: 35px;
     }
+
+    
 }

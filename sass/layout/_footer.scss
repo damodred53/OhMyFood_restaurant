@@ -23,6 +23,14 @@
         margin-bottom:0%;
     }
 
+    @media (min-width:1440px) {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 10rem;
+        padding-bottom: 2rem;
+    }
+
     &.footer p {
         font-weight: 500;
         line-height: 19px;
@@ -86,5 +94,9 @@
 
    &_under_div > img {
     width: 4%;
+
+    @media (min-width: 1024px) {
+        width: 1rem;
+    }
     }
 }

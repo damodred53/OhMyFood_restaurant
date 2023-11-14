@@ -11,10 +11,6 @@
     opacity: 1;
     transition: opacity 550ms;
 }
-/*.checkbox:not(:checked) + .heart_check_box_full {
-    opacity: 0;
-    transition: opacity 550ms;
-}*/
 
 .heart_check_box{
     position: absolute;
@@ -23,6 +19,7 @@
     width: 21px;
     opacity: 1;
     z-index: 0;
+    cursor: pointer;
 }
 .heart_check_box_full {
     position: absolute;
@@ -31,8 +28,8 @@
     width: 21px;
     opacity: 0;
     z-index: 0;
+    cursor: pointer;
 }
 
-/*.heart_check_box_full:active {
-    animation: opacity 1s linear;
-}*/
+
+
