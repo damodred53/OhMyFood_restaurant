@@ -9,6 +9,11 @@
 }
 .checkbox:checked + .heart_check_box_full{
     opacity: 1;
+    transition: opacity 550ms ;
+}
+
+.checkbox:not(:checked) + .heart_check_box_full{
+    opacity: 0;
     transition: opacity 550ms;
 }
 
