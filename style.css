@@ -300,10 +300,18 @@ button:hover {
 @media (min-width: 1440px) {
   .cards_menu_entree {
     padding: 2%;
+    /*&:checked + .cards_menu_entree_validated + .cards_menu_entree_price {
+
+        transform: translateX(140%);
+        transition-delay: 250ms;
+    }*/
   }
 }
 .cards_menu_entree.cards_menu_entree h3 {
   margin: 0% 0% 2% 0%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .cards_menu_entree_validated {
   display: flex;
@@ -321,6 +329,11 @@ button:hover {
   top: 0;
   bottom: 0;
   transform: translateX(2000px);
+}
+@media (min-width: 1440px) {
+  .cards_menu_entree_validated {
+    width: 10%;
+  }
 }
 .cards_menu_entree_menu_animation_1 {
   animation: landingpage 1000ms 500ms both;
@@ -375,6 +388,11 @@ button:hover {
   justify-content: flex-end;
   align-items: flex-end;
   transition: transform 300ms 0ms;
+}
+@media (min-width: 1440px) {
+  .cards_menu_entree_price {
+    width: 15%;
+  }
 }
 
 .header {

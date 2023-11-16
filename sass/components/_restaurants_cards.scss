@@ -13,10 +13,19 @@
 
     @media (min-width:1440px) {
         padding: 2%;
+
+        /*&:checked + .cards_menu_entree_validated + .cards_menu_entree_price {
+
+            transform: translateX(140%);
+            transition-delay: 250ms;
+        }*/
     }
     
     &.cards_menu_entree  h3 {
         margin: 0% 0% 2% 0%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     } 
     
     &_validated {
@@ -32,6 +41,12 @@
         top: 0;
         bottom: 0;
         transform: translateX(2000px);
+
+        @media (min-width:1440px) {
+            width: 10%;
+
+
+        }
         
     }
 
@@ -100,6 +115,10 @@
        justify-content: flex-end;
         align-items: flex-end;
         transition : transform 300ms 0ms;
+
+        @media (min-width:1440px) {
+            width: 15%;
+        }
     }
     
     
